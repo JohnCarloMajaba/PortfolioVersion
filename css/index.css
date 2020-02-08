@@ -1,0 +1,234 @@
+@font-face{
+    src: url(../font/Sacramento-Regular.ttf);
+    font-family: Sacramento;
+}
+@font-face{
+    src: url(../font/Montserrat-Regular.ttf);
+    font-family: Montserrat;
+}
+@font-face{
+    src: url(../font/Merriweather-Regular.ttf);
+    font-family: Merreiweather;
+}
+@keyframes Star{
+    0% {
+        opacity: 0;
+        transform: scaleZ(95vw);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleZ(-95vw);
+    }
+}
+@keyframes Star2{
+    0% {
+        opacity: 0;
+        transform: scaleZ(95vw);
+    }
+    100% {
+        opacity: 1;
+        transform: scaleZ(-95vw);
+    }
+}
+@keyframes CloudTop{
+    0% {
+        opacity: 0;
+        transform: translateX(95vw);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-95vw);
+    }
+}
+@keyframes CloudBottom{
+    0% {
+        opacity: 0;
+        transform: translateX(-95vw);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(95vw);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    text-align: center;
+}
+.home-header{
+    background: linear-gradient(black, blue, aqua);
+    height: 95vh;
+    position: relative;
+    overflow: hidden;
+    padding-top: 5rem;
+}
+.header-title{
+    font-family: Sacramento;
+    font-size: 9rem;
+    color: teal;
+}
+.header-sub{
+    font-family: Montserrat;
+    font-size: 3rem;
+    color: whitesmoke;
+}
+.cloud-top{
+    position: relative;
+    top: 1rem;
+    left: 25rem;
+    animation: CloudTop 14s infinite linear;
+}
+.cloud-bottom{
+    position: absolute;
+    left: 30rem;
+    top: 25rem;
+    animation: CloudBottom 14s infinite linear;
+}
+.star-header{
+    position: absolute;
+    width: 15rem;
+    animation: Star 4s normal;
+}
+.star2{
+    position: absolute;
+    left: 30rem;
+    top: 5rem;
+    width: 15rem;
+}
+.star3{
+    position: absolute;
+    left: 100rem;
+    width: 30rem;
+    bottom: 45rem;
+}
+.shooting{
+    position: absolute;
+    width: 20rem;
+    left: 50rem;
+    top: 20rem;
+}
+.shoot{
+    position: absolute;
+    width: 20rem;
+    top: 40rem;
+    animation-delay: Star2 15s;
+}
+.moon{
+    position: absolute;
+    width: 20rem;
+    left: 2rem;
+    bottom: 45rem;
+}
+.img-moutain{
+    position: relative;
+    bottom: -4.5rem;
+    width: 60rem;
+}
+.tree{
+    position: absolute;
+    bottom: -1rem;
+    width: 50rem;
+    left: 0;
+}
+.home-section-intro{
+    background:linear-gradient(skyblue, teal);
+    height: 30vh;
+}
+.intro-img{
+    width: 15rem;
+    height: 15rem;
+    border-radius: 100%;
+}
+.home-section-skills{
+    height: 95vh;
+    position: relative;
+    background: whitesmoke;
+}
+.home-footer{
+    height: 8vh;
+    background:skyblue;
+    font-family: Merriweather;
+    font-size: 2rem;
+}
+.foot{
+    color: red;
+}
+.skills-article-container{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 2;
+}
+.title-lorem{
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    line-height: 1;
+}
+.lorem{
+    font-family: Merriweather;
+    font-size: 3rem;
+    margin: 10px;
+    color: teal;
+}
+.lorem2{
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin: 4rem;
+    color:darkgreen;
+}
+.lorem3{
+    font-family: Montserrat;
+    font-size: 2rem;
+    margin: 7rem;
+}
+.skills-img-lorem{
+    width: 15rem;
+    float: left;
+}
+.skills-title-lorem{
+    font-family: Merriweather;
+    font-size: 3rem;
+}
+.skills-p-lorem{
+    font-family: Montserrat;
+    font-size: 2rem;
+}
+button{
+    background: radial-gradient(skyblue,blue);
+    color: black;
+    height: 50px;
+    width: 100px;
+    font-family: Montserrat;
+    font-size: 10px;
+    margin: 5rem;
+}
+button:hover{
+    background: radial-gradient(skyblue, pink);
+    font-size: small;
+}
+.a{
+    color: black;
+}
+.a:hover{
+    color: blue;
+}
+.b:hover{
+    color: orangered;
+}
+.b{
+    color: black;
+}
+.c{
+    color: black;
+}
+.c:hover{
+    color: red;
+}
